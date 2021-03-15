@@ -1,0 +1,14 @@
+//Create Migrations then run them
+py manage.py makemigrations // can add // --dry-run --verbosity 3 (test run of migrations)
+py mangae.py migrate
+
+//Run Server
+py manage.py runserver
+
+py manage.py createsuperuser
+
+pip nstall coverage
+
+coverage run --omit='*/venv/*' manage.py test
+coverage html
+pip install djangorestframework
