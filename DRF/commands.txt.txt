@@ -2,6 +2,9 @@
 py manage.py makemigrations // can add // --dry-run --verbosity 3 (test run of migrations)
 py mangae.py migrate
 
+Run venv
+in venv folder then copy - "Scripts\activate"
+
 //Run Server
 py manage.py runserver
 

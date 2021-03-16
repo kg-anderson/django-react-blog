@@ -125,9 +125,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Project level setting can use IsAuthenticated for auth'd users only
+# AllowAny, IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny'
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly'
     ]
 }
 
