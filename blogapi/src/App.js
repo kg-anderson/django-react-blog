@@ -7,7 +7,7 @@ import Test from './components/Test'
 function App() {
 
   //The component we pass through here becomes the <Component>
-  const PostLoading = PostLoadingComponent(Test)
+  const PostLoading = PostLoadingComponent(Posts)
   const [appState, setAppState] = useState({
     loading: false,
     posts: null
